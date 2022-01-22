@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import PostDetail from './components/PostDetail/PostDetail';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/Home">
               <Home />
+            </Route>
+            <Route path="/post/:id">
+              <PostDetail />
             </Route>
           </Switch>
         </div>
